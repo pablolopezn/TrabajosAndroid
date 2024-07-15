@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">TrabajoAndroid</string>
+    <string name="searchTv">Búsqueda</string>
+    <string name="genre_1" translatable="false">Pop</string>
+    <string name="genre_2">Latino</string>
+    <string name="genre_3" translatable="false">Rock</string>
+    <string name="genre_4" translatable="false">Hip-Hop</string>
+    <string name="genre_5" translatable="false">Jazz</string>
+    <string name="genre_6">Clásica</string>
+    <string name="grid_title_Tv">Los géneros más escuchados</string>
+    <string name="myArtistsTv">Mis Artistas</string>
+    <string name="followers">seguidores</string>
+    <string name="plays">reproducciones</string>
+</resources>

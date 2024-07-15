@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TrabajoAndroid</string>
+    <string name="searchTv">Search</string>
+    <string name="genre_2">Latin</string>
+    <string name="genre_6">Classic Music</string>
+    <string name="grid_title_Tv">The most listened to genres</string>
+    <string name="myArtistsTv">My Artists</string>
+    <string name="followers">followers</string>
+    <string name="plays">plays</string>
+</resources>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".actividades.MainActivity">
+
+
+    <TextView
+        android:id="@+id/myArtistsTv"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="@string/myArtistsTv"
+
+        android:textSize="50sp"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+     />
+
+    <!--ReciclerView: componente para listas-->
+
+    <!--al no tener ancho y alto ocupa toda la pantalla
+        PARA EL MISMO TIPO DE ITEM
+        TODOS LOS ARTITAS SON IGUALES
+    -->
+
+    <!--Para items de distinto tipo, necesitamos varios ViewHolders para cada tipo distinto de Vista-->
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="4"
+        android:layout_gravity="center"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/myArtistsTv">
+
+        <!-- Título que abarca dos columnas -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_columnSpan="2"
+            android:padding="16dp"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:text="@string/grid_title_Tv"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Género 1 -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_columnWeight="1"
+            android:padding="16dp"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:text="@string/genre_1"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/gradient_background_green"
+            android:layout_margin="8dp" />
+
+        <!-- Género 2 -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_columnWeight="1"
+            android:padding="16dp"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:text="@string/genre_2"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/gradient_background_orange"
+            android:layout_margin="8dp" />
+
+        <!-- Género 3 -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_columnWeight="1"
+            android:padding="16dp"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:text="@string/genre_3"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/gradient_background_red"
+            android:layout_margin="8dp" />
+
+        <!-- Género 4 -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_columnWeight="1"
+            android:padding="16dp"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:text="@string/genre_4"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/gradient_background_purple"
+            android:layout_margin="8dp" />
+
+        <!-- Género 5 -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_columnWeight="1"
+            android:padding="16dp"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:text="@string/genre_5"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/gradient_background_blue_dark"
+            android:layout_margin="8dp" />
+
+        <!-- Género 6 -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_columnWeight="1"
+            android:padding="16dp"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:text="@string/genre_6"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/gradient_background_blue"
+            android:layout_margin="8dp" />
+
+    </GridLayout>
+
+
+
+    <!--<androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvArtistas"
+
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:orientation="vertical"
+
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+    />-->
+
+    <!--<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+    />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

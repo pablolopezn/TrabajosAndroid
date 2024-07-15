@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ViewModel</string>
+
+    <!--El marcador de posición %1$d sigue el formato de String.format() en Java:
+
+        % indica que es un marcador de posición.
+        1$ indica el primer argumento que se pasará al formato.
+        d indica que el valor será un número decimal entero.
+    -->
+    <string name="contador">%1$d</string>
+</resources>
